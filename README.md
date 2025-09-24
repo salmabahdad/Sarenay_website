@@ -1,4 +1,4 @@
-# Sarenay Website
+# 💎 Sarenay Website
 
 ## Sarenay Website is a modern, responsive e-commerce website showcasing elegant jewelry collections.
 
