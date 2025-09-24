@@ -28,10 +28,10 @@ session_start();
     <div class="mt-8 space-y-3 rounded-lg border bg-white px-2 py-4 sm:px-6">
 <?php 
 
-$host = "localhost";
-$user = "root";
+$host = "";
+$user = "";
 $password = "";
-$database = "shop-db";
+$database = "";
 $port = 3307;
 $conn = mysqli_connect($host, $user, $password, $database,$port);
 
@@ -206,11 +206,11 @@ $requete100="SELECT * FROM shoppingbag where emailclient='$session1'";
      <?php 
 
 
-$host = "localhost";
-$user = "root";
+$host = "";
+$user = "";
 $password = "";
-$database = "shop-db";
-$port = 3307;
+$database = "";
+$port = ;
 $conn = mysqli_connect($host, $user, $password, $database,$port);
 
 /*$sql1 = "ALTER TABLE lignedecommande

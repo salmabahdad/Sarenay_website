@@ -78,20 +78,8 @@
   
 
     &nbsp;
-    <?php 
-    session_start();
-    if(isset($_SESSION["user_email"])){//onClick="afficherdropdown()"
-      echo'<a href="#" id="user" name="user" class="  font-thin mt-2.5 text-sm hover:text-gray-600  text-gray-400"><img class="h-4 mt-0 ml-auto"src="images/user.png"></a>&nbsp;&nbsp;';
-      echo'<button id="buttondrop" name="user" class="user font-thin text-xs hover:text-gray-600 text-gray-400 pt-0" onclick="toggleDropdown()">'.$_SESSION["user_email"].'</button>';
-    }
-    else{
-      echo'<a href="login.php" id="user" name="user" class="  font-thin mt-2.5 text-sm hover:text-gray-600  text-gray-400"><img class="h-4 mt-0 ml-auto"src="images/user.png"></a>&nbsp;&nbsp;';
-    }
-     
     
     
- 
-  ?>
 
     <div id="dropdown" class=" dropdown absolute right-0 top-6  w-56  rounded-md   ring-black ring-opacity-5 focus:outline-none" style="visibility:hidden;">
     <div class=" absolute right-0 z-10 mt-2 w-56 origin-top-right  bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"  role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
@@ -102,14 +90,7 @@
       
       <form method="POST" name="signout"  role="none">
         <button type="submit" class="text-gray-700 block w-full px-4 py-2 text-left text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
-<?php
 
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-unset($_SESSION['user_email']);
-header("location:home.php");
-}
-
-?>
       </form>
     </div>
   </div>
@@ -237,7 +218,7 @@ header("location:home.php");
 
   <div class=" h-full flex justify-center items-start">
     <div class="max-w-screen-lg mx-auto">
-      <a href="lastring.html"><img src="images/star.jpg" class="h-full w-auto" alt="Star image"></a>
+      <a href="lastring.html"><img src="images/star.jpg" class="h-96 w-screen" alt="Star image"></a>
     </div>
   </div>
 
@@ -321,7 +302,7 @@ header("location:home.php");
     <p class="mt-2 text-black font-extralight">Embrace the art of adornment with your jewelry choices.</p>
   </div>
   <div class="w-1/2 pl-16">
-    <img src="images/hand.jpg" alt="Your Image" class="hand  w-auto md:h-full ">
+    <img src="images/hand.jpg" alt="Your Image" class="hand  w-auto md:max-h-screen ">
   </div>
 </div>
 

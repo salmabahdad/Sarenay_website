@@ -223,11 +223,11 @@
 
 <?php
 
-$host = "localhost";
-$user = "root";
+$host = "";
+$user = "";
 $password = "";
-$database = "shop-db";
-$port =3307;
+$database = "";
+$port =;
 $conn = mysqli_connect($host, $user, $password, $database,$port);
 
 if (!$conn) {

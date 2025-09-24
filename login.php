@@ -143,11 +143,11 @@
 session_start(); // Démarrez la session
 
 // Connexion à la base de données
- $host = "localhost"; // Adresse du serveur MySQL
- $user = "root"; // Nom d'utilisateur MySQL
+ $host = ""; // Adresse du serveur MySQL
+ $user = ""; // Nom d'utilisateur MySQL
  $password = ""; // Mot de passe MySQL
- $database="shop-db";
- $port =3307;
+ $database="";
+ $port =;
 $conn = mysqli_connect($host, $user, $password, $database,$port);
 
  
